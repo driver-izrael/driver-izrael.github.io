@@ -1,0 +1,126 @@
+.contact {
+    background-color: rgba(#fff, .5);
+
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        & {
+            padding-top: 30%;
+        }
+    }
+
+    &__title {
+        color: #fff !important;
+        font-size: 3vw !important;
+        font-weight: bold !important;
+        line-height: 1.5 !important;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 100px;
+        font-family: $primary-font;
+        //-webkit-text-stroke: 2px rgba(0,0,0,.7);
+
+        &_accent {
+            background-color: #f18458;
+            padding-bottom: 6px;
+            padding-right: 8px;
+        }
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        &__title {
+            font-size: 6vw !important;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__subtitle {
+        color: #fff;
+        padding-bottom: 20px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 0 2%;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        &__container {
+            padding: 0 10%;
+        }
+    }
+
+    &__prices, 
+    &__phones {
+        width: 40%;
+        text-align: right;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        &__prices, 
+        &__phones {
+            width: 100%;
+        }
+    }
+
+    &__item {
+        padding-bottom: 10px;
+        display: block;
+        color: #000;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        &__item {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__show-more-open, &__show-more-close {
+        position: absolute;
+        bottom: -3%;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        font-weight: bold;
+        color: $landing-accent-color;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__item-img {
+        width: 120px;
+        height: 120px;
+        // border-radius: 120px;
+        // box-shadow: 8px 8px $landing-accent-color !important;
+        border-right: 1px dashed #000;
+        border-bottom: 1px dashed #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+        margin-left: 50px;
+        transform: scale(1);
+        transition: transform .5s;
+
+        &:hover {
+            transform: scale(1.05)
+        }
+
+        &_dark {
+            filter: brightness(40%);
+        }
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        &__item-img {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__btn {
+        margin-top: $section-gap/2;
+        text-align: center;
+    }
+}

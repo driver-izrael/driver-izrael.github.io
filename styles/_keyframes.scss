@@ -1,0 +1,44 @@
+
+
+@keyframes left {
+    from {
+        transform: translateX(-100px);
+    }
+  
+    to {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes right {
+    from {
+        transform: translateX(100px);
+    }
+  
+    to {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+}
+
+
+@keyframes shake-btn {
+    from {
+        transform: translateX(-10px);
+    }
+  
+    to {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}

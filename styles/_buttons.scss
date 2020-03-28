@@ -1,0 +1,42 @@
+.button-contact {
+    color: #fff;
+    background-color: rgba($brand-color, .5);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    box-shadow: 4px 4px $landing-accent-color !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    cursor: pointer;
+    transform: translateX(0);
+    animation: left 1s ease;
+    border: none;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        & {
+            font-size: 14px;
+            display: block;
+        }
+    }
+
+    &_big {
+        padding: 10px 20px;
+        box-shadow: 6px 6px $landing-accent-color !important;
+    }
+
+    &_full-color {
+        background-color: rgba($brand-color, 1);
+    }
+
+    &:hover {
+        text-shadow: 2px 1px $landing-accent-color !important;
+    }
+
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        &:hover {
+            text-shadow: none;
+        }
+    }
+
+}

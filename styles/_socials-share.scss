@@ -1,0 +1,76 @@
+.socials-share {
+
+    $icon-size: 35px;
+  
+    position: fixed;
+    top: 10%;
+    left: 2%;
+    z-index: 100000;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        & {
+            display: flex;
+        }
+    }
+ 
+
+    &__body {
+        display: block;
+        height: 100%;
+        transition: height 1s;
+
+        &.hide {
+            height: 0;
+            display: none;
+        }
+
+        @media screen and (max-width: $mobile-breakpoint) {
+            & {
+                display: flex;
+            }
+        }
+    }
+    
+    &__header, &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        width: $icon-size;
+        height: $icon-size;
+        border-radius: $icon-size;
+        margin-bottom: $icon-size/3;
+        transition: transform .3s;
+        cursor: pointer;
+      
+      
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            transform: scale(1.05)
+        }
+
+        @media screen and (max-width: $mobile-breakpoint) {
+            & {
+                margin-right: $icon-size/3;
+            }
+        }
+    }
+
+    &__icon {
+        width: $icon-size;
+
+        &_share {
+            width: $icon-size/2;
+            filter: opacity(80%);
+            transform: rotate(0);
+            transition: transform 1s;
+
+            &:hover {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

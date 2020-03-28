@@ -1,0 +1,148 @@
+.about-section {
+    background-color: lighten($landing-accent-2-color, 30%);
+    background-image: url('../icons/panoramic-3241421_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: fixed; 
+    background-size: cover;
+    position: relative;
+
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        & {
+            padding-top: 30%;
+        }
+    }
+
+    .material-icons {
+        font-size: 50px;
+        margin: 0 auto;
+        color: gray;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba($landing-accent-color, 0.4);
+        z-index: 0;
+    }
+    
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__title {
+    //    -webkit-text-stroke: 2px rgba(0,0,0,.7);
+        color: #fff;
+        &_accent {
+            background-color: #f18458;
+            padding-bottom: 6px;
+            padding-right: 8px;
+        }
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        &__title {
+            font-size: 6vw !important;
+        }
+    }
+
+    &__list {
+        display: flex;
+        padding-top: 50px;
+    }
+
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        &__list {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:nth-child(2n) {
+            margin-top: 5%;
+        }
+        
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        &__item {
+            width: 100%;
+            margin-top: 0;
+            padding-bottom: 80px;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #fff;
+        width: 120px;
+        height: 120px;
+        border-radius: 120px;
+        box-shadow: 8px 8px $landing-accent-color !important;
+        //border: 6px solid $brand-color;
+        margin-bottom: 50px;
+        transform: scale(1);
+        transition: transform .5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        &__icon {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &__icon-img {
+        height: 80px;
+        margin: 0 auto;
+
+        @media screen and (max-width: $mobile-breakpoint) {
+            & {
+                height: 60px;
+            }
+        }
+    }
+
+    &__item-text {
+        font-size: 20px;
+        color: #fff;
+    }
+
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        &__item-text {
+            font-size: 22px;
+        }
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        &__item-text {
+            font-size: 25px;
+        }
+    }
+
+    &__go-next {
+        padding-top: 100px;
+    }
+}
