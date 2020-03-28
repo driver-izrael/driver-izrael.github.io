@@ -37,7 +37,7 @@ ul, li {
 }
 
 .title_accent {
-  background-color: #f16e58;
+  background-color: #9babf5;
   padding-bottom: 6px;
   padding-right: 8px;
 }
@@ -614,7 +614,7 @@ body.modal {
 
 .button-contact {
   color: #fff;
-  background-color: rgba(117, 1, 5, 0.5);
+  background-color: rgba(0, 56, 184, 0.5);
   padding: 5px 20px;
   text-transform: uppercase;
   -webkit-box-shadow: 4px 4px #9babf5 !important;
@@ -644,11 +644,7 @@ body.modal {
 }
 
 .button-contact_full-color {
-  background-color: #750105;
-}
-
-.button-contact:hover {
-  text-shadow: 2px 1px #9babf5 !important;
+  background-color: #0038b8;
 }
 
 @media screen and (max-width: 600px) {
